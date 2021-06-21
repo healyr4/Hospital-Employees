@@ -1,0 +1,119 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Record">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Person" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fullName">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="firstName">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:minLength value="3" />
+                          <xs:maxLength value="25" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="middleName" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="surname" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="dateOfBirth">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="day">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                          <xs:minInclusive value="1"/>
+                          <xs:maxInclusive value="31"/>
+                        </xs:restriction>
+                      </xs:simpleType> 
+                    </xs:element>
+                    <xs:element name="month">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                          <xs:minInclusive value="1"/>
+                          <xs:maxInclusive value="12"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="year" type="xs:positiveInteger"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="street" type="address"></xs:element>
+                    <xs:element name="number" type="address"></xs:element>
+                    <xs:element name="city" type="address"></xs:element>
+                    <xs:element name="county" type="address"></xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="phone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="\d\d\d/[0-9]{3}-[0-9]{4}"></xs:pattern> 
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[^@]+@[^\.]+\..+"></xs:pattern>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="pps" type="xs:ID" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Hospital">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title"/>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="street" type="address"></xs:element>
+                    <xs:element name="number" type="address"></xs:element>
+                    <xs:element name="city" type="address"></xs:element>
+                    <xs:element name="county" type="address"></xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="phone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[0-9]{3} [0-9]{3}-[0-9]{3}"></xs:pattern>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[^@]+@[^\.]+\..+"></xs:pattern>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="gnl" type="xs:ID" use="required" /> 
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name ="address">
+    <xs:sequence>
+      <xs:element name="street" type="address"></xs:element>
+      <xs:element name="number" type="address"></xs:element>
+      <xs:element name="city" type="address"></xs:element>
+      <xs:element name="county" type="address"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

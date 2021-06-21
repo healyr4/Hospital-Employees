@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!ELEMENT Record (Person+, Hospital+)>
+<!ELEMENT Person (fullName,dateOfBirth,address,mobile,landline,email+)>
+<!ELEMENT Hospital (title, address,phone, email+)>
+<!ELEMENT fullName (firstName, middleName?,surname+)>
+<!ELEMENT dateOfBirth (day, month, year)>
+<!ELEMENT address (number, street, city, county?)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT middleName (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT county (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>
+<!ELEMENT landline (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+
+<!ATTLIST Person pps  ID  #REQUIRED >
+<!ATTLIST Hospital gln ID #REQUIRED>
+<!ATTLIST Person clearance (yes|no) "no">
+<!ATTLIST phone type (mobile|landline) #REQUIRED "landline">
+<!ATTLIST email version (personal|work) #REQUIRED>

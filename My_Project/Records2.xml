@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE Record SYSTEM "Records.dtd">
+<?xml-stylesheet type ="text/xsl" href ="Records.xsl"?>
+
+<Record>
+    <Person pps="pps-7103453Q">
+        <fullName>
+            <firstName>Jennie</firstName>
+            <surname>Kelly</surname>
+        </fullName>
+        <dateOfBirth>
+            <day>27</day>
+            <month>6</month>
+            <year>1985</year>
+        </dateOfBirth>
+        <address>
+            <number>32</number>
+            <street>Franken Street</street>
+            <city>Muckross</city>
+            <county>Cork</county>
+        </address>
+        <mobile>089 403-9787</mobile>
+        <landline>04 672-1707</landline>
+        <email version="personal">alice_malice@protonmail.com</email>
+    </Person>
+
+    <Person pps="pps-103253N">
+        <fullName>
+            <firstName>Max</firstName>
+            <surname>Bilan</surname>
+        </fullName>
+        <dateOfBirth>
+            <day>23</day>
+            <month>9</month>
+            <year>1960</year>
+        </dateOfBirth>
+        <address>
+            <number>60</number>
+            <street>Kyelemore Road</street>
+            <city>Ardee</city>
+            <county>Louth</county>
+        </address>
+        <mobile>087 121-4651</mobile>
+        <landline>05 383-4652</landline>
+        <email version="personal">max_dax90@gmail.com</email>
+    </Person>
+
+    <Person pps="pps-176235S">
+        <fullName>
+            <firstName>Sasha</firstName>
+            <surname>Musk</surname>
+        </fullName>
+        <dateOfBirth>
+            <day>12</day>
+            <month>3</month>
+            <year>1998</year>
+        </dateOfBirth>
+        <address>
+            <number>85</number>
+            <street>Balbutcher Lane</street>
+            <city>Dublin</city>
+            <county>Dublin</county>
+        </address>
+        <mobile>087 121-4651</mobile>
+        <landline>05 383-4652</landline>
+        <email version="personal">sasha102@gmail.com</email>
+    </Person>
+
+    <Hospital gln="gln-3273534">
+        <title>Ennis General Hospital</title>
+        <address>
+            <number>29</number>
+            <street>Ennis Road Listowel</street>
+            <city>Ennis</city>
+            <county>Clare</county>
+        </address>
+        <mobile>083 191-2034</mobile>
+        <landline>01 927-9017</landline>
+        <email version="personal">admin@egh.ie</email>
+    </Hospital>
+
+    <Hospital gln="gln-2362535">
+        <title>University Hospital Galway</title>
+        <address>
+            <number>23</number>
+            <street>Galway Plaza</street>
+            <city>Galway City</city>
+            <county>Galway</county>
+        </address>
+        <mobile>086 132-9374</mobile>
+        <landline>03 476-8676</landline>
+        <email version="personal">admin@uhg.ie</email>
+
+    </Hospital>
+
+</Record>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE Record SYSTEM "Records.dtd">
+<?xml-stylesheet type ="text/xsl" href ="Records.xsl"?>
+
+<Record>
+    <Person pps="pps-7103453Q">
+        <fullName>
+            <firstName>Alice</firstName>
+            <surname>Daly</surname>
+        </fullName>
+        <dateOfBirth>
+            <day>21</day>
+            <month>2</month>
+            <year>1990</year>
+        </dateOfBirth>
+        <address>
+            <number>31</number>
+            <street>Mary Street</street>
+            <city>Bandon</city>
+            <county>Cork</county>
+        </address>
+        <mobile>089 403-9787</mobile>
+        <landline>02 625-1094</landline>
+        <email version="personal">alice_malice@gmail.com</email>
+    </Person>
+
+    <Person pps="pps-103253N">
+        <fullName>
+            <firstName>Max</firstName>
+            <surname>Bilan</surname>
+        </fullName>
+        <dateOfBirth>
+            <day>23</day>
+            <month>9</month>
+            <year>1960</year>
+        </dateOfBirth>
+        <address>
+            <number>60</number>
+            <street>Kyelemore Road</street>
+            <city>Dublin</city>
+            <county>Dublin</county>
+        </address>
+        <mobile>087 121-4651</mobile>
+        <landline>05 383-4652</landline>
+        <email version="personal">max_dax90@gmail.com</email>
+    </Person>
+
+
+    <Hospital gln="gln-3273534">
+        <title>Limerick University Hospital</title>
+        <address>
+            <number>29</number>
+            <street>Barryfarm Avenue</street>
+            <city>Barryfarm</city>
+            <county>Limerick</county>
+        </address>
+        <mobile>083 191-2034</mobile>
+        <landline>01 927-9017</landline>
+        <email version="work">admin@limerickuh.ie</email>
+
+    </Hospital>
+
+</Record>
